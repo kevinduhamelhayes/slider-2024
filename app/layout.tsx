@@ -3,6 +3,7 @@ import type { ReactNode } from 'react'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -17,7 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`bg-black text-gray-400${inter.className}`}>{children}</body>
+      <>
+      
+      <body className={`bg-black text-gray-200 first-line:${inter.className}`}>{children}</body>
+      </>
     </html>
   )
 }

@@ -1,9 +1,16 @@
-import Image from 'next/image'
+import Headers from '../components/widgets/Headers'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
- 
-    </main>
+    <>
+    <Headers/>
+    <div className='h-screen relative'>
+      <ul className=''>
+        <li></li>
+
+      </ul>
+    </div>
+
+    </>
   )
 }
